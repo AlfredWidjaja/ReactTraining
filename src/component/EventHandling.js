@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 function EventHandling(){
     // state
@@ -16,8 +16,18 @@ function EventHandling(){
     return(
         <div className="container calculator">
         <h1 className="text-primary">{number}</h1>
-        <button onClick={addHandler} className="btn btn-md btn-success my-3">Add (+)</button>
-        <button onClick={subHandler} className="btn btn-md btn-danger my-3">Sub (-)</button>
+        <button 
+            onClick={addHandler} 
+            className="btn btn-md btn-success my-3">
+            Add (+)
+        </button>
+        <button 
+            onClick={subHandler} 
+            className="btn btn-md btn-danger my-3 ms-2">
+            Sub (-)
+        </button>
       </div>
     )
 }
+
+export default EventHandling

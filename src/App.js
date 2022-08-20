@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import Profile from './component/Profile.js'
-import TableProfile from './component/TableProfile';
+import TableProfile from './component/TableProfile.js';
+import EventHandling from './component/EventHandling.js';
 
 // React Component
 function App() {
@@ -15,6 +16,10 @@ function App() {
       </div>
 
       <TableProfile></TableProfile>
+      
+      <div className="container border rounded">
+        <EventHandling></EventHandling>
+      </div>
     </div>
   );
 }
