@@ -2,11 +2,11 @@
 // React Component
 function Profile(props) {
   // JSX => Syntactical Sugar utk HTML
+  const {name, hobby} = props
   return (
-    <div className="Profile">
-      <header className="App-Profile">
-        <h1>Hello, My Name is {props.name} </h1>
-      </header>
+    <div className="m-3">
+        <h3>Hello, My Name is {name} </h3>
+        <p>Hobi saya adalah {hobby}</p>
     </div>
   );
 }

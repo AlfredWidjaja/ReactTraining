@@ -1,48 +1,20 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css'
 import Profile from './component/Profile.js'
+import TableProfile from './component/TableProfile';
 
 // React Component
 function App() {
-  var profiles = [
-    {
-      id: 1,
-      name: "Alfred Widjaja",
-      hobby: "Playing Games"
-    },
-    {
-      id: 2,
-      name:"TESTING",
-      hobby:"Testing"
-    }
-  ]
+
   // JSX => Syntactical Sugar utk HTML
   return (
     <div className="App">
-      <h1>Belajar React JS</h1>
-      <hr/>
-      {
-        profiles.map(profile => {
-          const {id, name, hobby} = profile
-          return (
-            <Profile key={id} name={name} hobby={hobby}></Profile>  
-          )
-        })
-      }
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      <div className="container bg-dark py-3">
+        <h1 style={{color:"white"}}>Belajar React JS</h1>
+      </div>
+
+      <TableProfile></TableProfile>
     </div>
   );
 }
